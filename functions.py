@@ -1,8 +1,5 @@
 from naoqi import ALProxy
 
-global ROBOT_IP
-global ROBOT_PORT
-
 def func_connect(IP, PORT):
 	global memory
 	memory = ALProxy("ALMemory", IP, PORT)
@@ -129,7 +126,4 @@ def getTemp():
         print("No temperature found for this hardware: " + str(sFullName))
 
 def batteryCheck():
-	if (memory.getData("BatteryLowDetected")):
-		return True
-	else:
-		return False
+	return(memory.getData("BatteryLowDetected")):

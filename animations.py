@@ -1,9 +1,5 @@
 from naoqi import ALProxy
 
-global ROBOT_IP
-global ROBOT_PORT
-global motion
-
 motion = None
 
 def anim_storevar(IP, PORT):

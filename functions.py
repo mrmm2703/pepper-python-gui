@@ -126,4 +126,4 @@ def getTemp():
         print("No temperature found for this hardware: " + str(sFullName))
 
 def batteryCheck():
-	return(memory.getData("BatteryLowDetected")):
+	return(memory.getData("BatteryLowDetected"))

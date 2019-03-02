@@ -86,7 +86,7 @@ class MyModule():
 	def o_walk():
 		print("T_OUPUT: walk")
 		self.motion.move(0.5, 0, 0)
-		result == self.posture.goToPosture("Stand", 1)
+		result = self.posture.goToPosture("Stand", 1)
 		if(result):
 			self.animtts.say("^mode(contextual) There we go!")
 		else:
@@ -121,7 +121,7 @@ class MyModule():
 	
 	def o_battery(self):
 		print("T_OUPUT: battery")
-		if functions.batteryCheck() == True:
+		if functions.batteryCheck() is True:
 			self.animtts.say("^mode(contextual) I am low on battery!")
 		else:
 			self.animtts.say("^mode(contextual) I am not low on battery!")
@@ -175,7 +175,7 @@ class MyModule():
 
 	def o_standUp():
 		print("T_OUTPUT: stand")
-		result == self.posture.goToPosture("Stand", 1)
+		result = self.posture.goToPosture("Stand", 1)
 		if(result):
 			self.animtts.say("^mode(contextual) There we go!")
 		else:
